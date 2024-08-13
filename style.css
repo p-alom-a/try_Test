@@ -1,0 +1,292 @@
+html {
+    scroll-behavior: smooth;
+}
+
+
+body {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    /* background-color: #2348AB; */
+    /* background-color: #2348AB; */
+    /* background-color: #21356E; */
+    /* background-color: #102031; */
+    background-color: #002768;
+}
+
+.logo-typo{
+    font-family: comfortaa, sans-serif;
+    font-size: 1.7em;
+}
+section {
+    width: 100%;
+    height: 100vh;
+    padding: 0 1em;
+    box-sizing: border-box;
+}
+
+/* Style du conteneur principal */
+.top {
+   
+    padding-top: 2em;
+}
+
+/* Style de l'en-tête */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+    padding: 20px;
+    color: #ffffff;
+    width: 100%; 
+    box-sizing: border-box; 
+}
+
+/* Style du logo */
+.logo img {
+    width: 80px;
+    height: auto;
+    max-height: 50px;
+}
+
+/* Style de la barre de navigation */
+nav {
+    display: flex;
+    align-items: center;
+    gap: 3em;    
+}
+
+/* Liste de navigation */
+.nav-list { 
+    display: flex;
+    flex-direction: row;
+    gap: 3em;
+}
+
+/* Style des éléments de la liste */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+    font-family: "Comfortaa", sans-serif;
+    font-optical-sizing: auto;
+}
+
+/* Style des éléments de la liste */
+nav li {
+    margin-right: 20px;
+}
+
+/* Style des liens de navigation */
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+/* Style des liens de navigation au survol */
+nav a:hover {
+    color: #cccccc;
+}
+
+/* Style du bouton de contact */
+.contact-btn {
+    background-color: transparent;
+    border: 0.6px solid white;
+    border-radius: 10px;
+    padding: 10px 20px;
+    color: white;
+    font-weight: bold;
+    font-size: 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-family: "Comfortaa", sans-serif;
+}
+
+/* Style du bouton de contact au survol */
+.contact-btn:hover {
+    background-color: white;
+    color: black;
+   
+    transform: translateY(-2px);
+   }
+
+
+/* Liste déroulante pour les missions */
+.dropdown-content a {
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.show {
+    display: block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute; 
+    background-color: #f9f9f9;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+/* Hero */
+
+
+.container-hero {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3em;
+    gap: 7em;
+
+
+}
+
+/* Conteneur de l'accroche */
+.accroche-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center; 
+    width: 40%; 
+}
+
+
+
+.accroche-container,img{
+    object-fit: contain;
+    width: 80%;
+    
+}
+
+.inside-text-container {
+    width: 100%; 
+    margin-left: 2em;
+}
+
+.title {
+    color: white;
+    font-family: "Inter", sans-serif;
+    font-size: 2.5vw;
+}
+
+.paragraphe {
+    color: white;
+    font-family: "inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 2vw;
+    font-weight: 300;
+
+}
+
+.img-hero {
+    width: 55%; 
+    height: auto; 
+    object-fit: cover; 
+}
+
+
+.dot {
+    width: 500px; /* Largeur de l'élément contenant le motif */
+    height: 500px; /* Hauteur de l'élément contenant le motif */
+    background-image: radial-gradient(circle, currentColor 0.1px, transparent 2px);
+    background-size: 30px 30px; /* Taille de chaque cellule de la grille */
+    color: white; /* Couleur des points */
+    display: inline-block;/
+}
+
+
+
+/* a propos*/
+
+.apropos{
+    display: flex;
+    flex-direction: column;
+    gap: 4em;
+    width: 100%;
+}
+
+.entete-apropos-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 50%;
+    margin-left: 2em;
+   
+}
+.titre-apropos {
+
+    font-family: "Jura", sans-serif;
+    font-size: 2vw;
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+}
+
+.paragraphe-apropos {
+    font-family: "Inter", sans-serif;
+    font-size: 1.2vw;
+    font-weight: 200;
+}
+
+.texte-entete-apropos {
+    font-family: "inter", sans-serif;
+    font-size: 1.5vw;
+}
+
+.subtitle-apropos {
+    font-family: "Jura", sans-serif;
+    font-size: 1.3vw;
+    padding-bottom: 1em;
+    border-bottom: 1px solid #ccc;
+}
+
+.container-apropos{
+    display: flex;
+    flex-direction: row;
+    align-items: start;
+    justify-content: space-around;
+}
+
+.subcontainer-apropos{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: startpa;
+    width: 17%;
+}
+
+
+/* mission */
+
+.corps-mission {
+    width: 50%;
+    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    letter-spacing: -.022em;
+    line-height: 1.34;
+}
+
+.titre-mission{
+    font-family: 'jura', sans-serif;
+    text-transform: uppercase;
+    
+}
+
+.subtitle-mission{  
+    font-family: "Jura", sans-serif;
+    font-size: 1.3vw;    
+}
