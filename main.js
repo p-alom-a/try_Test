@@ -66,7 +66,6 @@ gsap.from(char, {
     }
 });
 
-
 // TEST
 const faqs = document.querySelectorAll('.faq');
 
@@ -75,4 +74,3 @@ faq.addEventListener("click",()=>{
 faq.classList.toggle("active");
 })
 })
-
